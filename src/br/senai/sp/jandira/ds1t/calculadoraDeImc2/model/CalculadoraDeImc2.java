@@ -40,19 +40,19 @@ public class CalculadoraDeImc2 {
 
     public void determinarSituacao(){
 
-        if (imcDoPaciente <= 18.5){
+        if (imcDoPaciente < 18.6){
             situacaoDoPaciente = "Abaixo Do Peso";
 
-        } else if ( imcDoPaciente <= 24.9  ) {
+        } else if ( imcDoPaciente >= 18.6 && imcDoPaciente< 25.0 ) {
             situacaoDoPaciente = "peso ideal";
 
-        } else if ( imcDoPaciente <= 29.9){
+        } else if ( imcDoPaciente >=25.0 && imcDoPaciente <30.0){
             situacaoDoPaciente = "Levemente acima do peso";
 
-        } else if ( imcDoPaciente <= 34.9){
+        } else if ( imcDoPaciente>=30.0 && imcDoPaciente<35.0){
             situacaoDoPaciente = "obesidade grau 1";
 
-        }else if (imcDoPaciente <= 39.9){
+        }else if (imcDoPaciente>=35 && imcDoPaciente <40){
             situacaoDoPaciente = "obesidade grau 2 (severa)";
 
         }else {
